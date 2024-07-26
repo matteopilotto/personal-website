@@ -1,0 +1,151 @@
+:root {
+    --border-rad-lg: 15px;
+    --light-text: #fefefe;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* form */
+.section-container {
+    display: flex;
+    max-width: 30vw;
+    min-height: 20vw;
+    margin: 20vh auto 0 auto;
+    border-radius: 25px 25px 0 0;
+    font-size: 16px;
+
+    /* Add these properties for the thin material effect */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(15px); /* Creates a frosted glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    align-items: center;
+    justify-content: center;
+}
+
+.section2-container {
+    background-color: white;
+    display: flex;
+    max-width: 30vw;
+    height: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-container, .section2-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* header/title */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Base styles for mobile devices */
+.header-container h1 {
+    font-size: clamp(24px, 5vw, 42px);
+}
+
+/* Styles for tablets and larger */
+@media only screen and (min-width: 768px) {
+    .header-container h1 {
+        font-size: 36px;
+    }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1024px) {
+    .header-container h1 {
+        font-size: 42px;
+    }
+}
+
+
+.header-container img {
+    display: flex;
+    max-width: 40%;
+    width: 150px; /* Set a default width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border: solid;
+    border-width: 5px;
+    border-color: rgba(46, 175, 221, 0.39);
+    border-color: rgba(0, 0, 0, 0.413);
+}
+
+.header-container h1 {
+    display: flex;
+    font-size: 42;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    /* background-color: #007bff; */
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1 {
+    font-size: 48;
+}
+
+.subtitle {
+    display: flex;
+    font-style: italic;
+    font-size: clamp(18px, 4vw, 32px);
+    padding: 10px;
+    margin: 0;
+}
+
+/* icons */
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.icon-img {
+    width: 10vmin;
+    height: 10vmin;
+    max-width: 75px;
+    max-height: 75px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon-link:hover .icon-img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
