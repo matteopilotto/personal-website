@@ -22,8 +22,8 @@ h1 {
 /* form */
 .section-container {
     display: flex;
-    max-width: 30vw;
-    min-height: 20vw;
+    max-width: 35vw;
+    min-height: 25vw;
     margin: 20vh auto 0 auto;
     border-radius: 25px 25px 0 0;
     font-size: 16px;
@@ -39,7 +39,7 @@ h1 {
 .section2-container {
     background-color: white;
     display: flex;
-    max-width: 30vw;
+    max-width: 35vw;
     height: fit-content;
     margin: 0;
     margin-left: auto;
@@ -139,7 +139,7 @@ h1 {
 
 .icon-img {
     width: 10vmin;
-    height: 10vmin;
+    height: auto;
     max-width: 75px;
     max-height: 75px;
     transition: transform 0.3s ease, filter 0.3s ease;
